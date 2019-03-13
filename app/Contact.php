@@ -12,6 +12,6 @@ class Contact extends Model
     public $timestamps = false;
 
     //Test pour git 
-    
+    //Branche dev à travailler
 
 }

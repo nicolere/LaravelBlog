@@ -32,21 +32,21 @@
 </div>
 
 <article class="grid-container">
-    <div class="grid-x align-center">
+    <!-- <div class="grid-x align-center">
         <div class="cell medium-8">
             @yield('content')
         </div>
-    </div>
-    <div class="grid-x align-center">
+    </div> -->
+    <!-- <div class="grid-x align-center">
         <div class="cell medium-8">
             @yield('content')
         </div>
-    </div>
-    <div class="grid-x align-center">
+    </div> -->
+    <!-- <div class="grid-x align-center">
         <div class="cell medium-8">
             @yield('content')
         </div>
-    </div>
+    </div> -->
     <div class="grid-x align-center">
         <div class="cell medium-8">
             @yield('content')

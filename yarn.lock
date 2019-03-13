@@ -998,7 +998,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
 
 bootstrap@^4.3.1:
   version "4.3.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.0.tgz#2559ccb8d45426ac6c54db23eb3d1c9f4257fa22"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#2559ccb8d45426ac6c54db23eb3d1c9f4257fa22"
 
 brace-expansion@^1.1.7:
   version "1.1.11"

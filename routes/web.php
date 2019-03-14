@@ -19,7 +19,12 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/articles', 'ArticleController@index');
 
-Route::get('/contact', 'ContactController@index');
-
 Route::get('/articles/{post_name}', 'ArticleController@show');
+
+//Demande du formulaire lors de l'appel de l'url contact
+Route::get('/contact', 'ContactController@create');
+
+//Route pour la soumission du formulaire
+Route::post('/contact', 'ContactController@store');
+
 

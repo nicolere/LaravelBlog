@@ -17,6 +17,8 @@
         <textarea class="form-control {{ $errors->has('contact_message') ? 'is-invalid' : '' }}" name="contact_message" id="contact_message" placeholder="Votre message">{{ old('contact_message') }}</textarea>                            {!! $errors->first('contact_message', '
         <div class="invalid-feedback">:message</div>') !!}
     </div>
+    <input type="datetime-local" id="contact_date"
+       name="contact_date" value="{{ now() }}">
     <button type="submit" class="btn btn-primary">Envoyer !</button>
 </form>
 

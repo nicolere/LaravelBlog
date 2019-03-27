@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card text-center border-dark mb-3 mx-auto" style="width: 18rem; border-radius: 1em">
-        <!-- <img class="card-img-top" src="../storage\app\public\image\img_card.jpg" alt="Card image cap"> -->
+        <img class="card-img-top" src="/images/img_card.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title text-info ">{{ $post->post_title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ $post->post_name }}</h6>

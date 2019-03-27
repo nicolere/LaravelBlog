@@ -16,7 +16,13 @@ class ContactController extends Controller
 
     public function store(ContactRequest $request) {
 
-        \App\Contact::create ($request->all());
+        // $contact = \App\Contact::create ($request->all());
+    
+        $contact = new \App\Contact;
+        $contact->fill($request->all());
+        $contact->contact_date = now();
+        $contact->save();
+
 
         $contacts = \App\Contact::all();
         return view('contact/confirmation',array(

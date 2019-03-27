@@ -25,6 +25,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/articles">Articles</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/message">Web Chat</a></li>
         </ul>
     </div>
 </div>

@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col">
         <div class="alert alert-success" role="alert">
-            Requête envoyée, vous allez être redirigé :)
+            Requête envoyée !
         </div>
         <div class="card text-center border-dark mb-3 mx-auto" style="width: 18rem; border-radius: 1em">
             <h5 class="card-header">Contact Request</h5>

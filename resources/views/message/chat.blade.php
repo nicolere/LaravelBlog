@@ -1,26 +1,11 @@
-@extends('layouts/main')
+@extends('layouts.main')
 
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Chats</div>
-
-                <div class="panel-body">
-                    <!-- Composant Vue -->
-                    <!-- <chat-messages :messages="messages"></chat-messages> -->
-                </div>
-                <div class="panel-footer">
-                    <!-- Composant Vue -->
-                    <!-- <chat-form
-                        v-on:messagesent="addMessage"
-                        :user="{{ Auth::user() }}"
-                    ></chat-form> -->
-                </div>
-            </div>
-        </div>
+<div class="container" id="app">
+    <div class="row justify-content-center">
+        <chat-component></chat-component>
+        <user-component></user-component>
     </div>
 </div>
 @endsection

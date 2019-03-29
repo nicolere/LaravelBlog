@@ -13,7 +13,9 @@ class Message extends Model
     * @var array
     */
 
-    protected $fillable = ['message'];
+    protected $fillable = ['body'];
+
+    protected $appends = ['selfMessage'];
     
     /**
     * A message belong to a user
@@ -22,6 +24,11 @@ class Message extends Model
     */
     public function user()
     {
-        return $this->belongsTo('App\User','user_id');
+        return $this->belongsTo(User::class);
+    }
+
+    public function getSelfMessageAttribute()
+    {
+        return $this->user_id === user()->id;
     }
 }

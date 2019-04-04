@@ -25,7 +25,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/articles">Articles</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/message">Web Chat</a></li>
+            <li><a href="/chat">Web Chat</a></li>
         </ul>
     </div>
 </div>
@@ -51,6 +51,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
 <script>
       $(document).foundation();
-    </script>
+</script>
 </body>
 </html>

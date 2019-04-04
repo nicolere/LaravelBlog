@@ -27,9 +27,6 @@ Route::get('/contact', 'ContactController@create');
 //Route pour la soumission du formulaire
 Route::post('/contact', 'ContactController@store');
 
-
-//Route pour WebChat
-Route::get('/message', 'ChatsController@index');
-Route::get('/message/messages','ChatsController@fetchMessages');
-Route::post('/message/messages','ChatsController@sendMessages');
+//Route pour le chat 
+Route::get('/chat', 'ChatsController@index');
 

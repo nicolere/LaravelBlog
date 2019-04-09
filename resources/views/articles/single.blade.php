@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-    <div class="card text-center border-dark mb-3 mx-auto" style="width: 18rem; border-radius: 1em">
+    <div class="card text-center border-dark mb-3 mx-auto" style="width: 100%; border-radius: 1em">
         <img class="card-img-top" src="/images/img_card.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title text-info ">{{ $post->post_title }}</h5>
@@ -13,4 +13,7 @@
             Post at : {{ $post->post_date }} by {{ $nameauthor }}
         </div>
     </div>
+
+    @yield('comment')
+
 @endsection

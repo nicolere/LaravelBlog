@@ -15,6 +15,9 @@
 //     return view('welcome');
 // });
 
+//Routes identification générées automatiquement
+Auth::routes();
+
 Route::get('/', 'HomeController@index');
 
 Route::get('/articles', 'ArticleController@index');
@@ -29,4 +32,5 @@ Route::post('/contact', 'ContactController@store');
 
 //Route pour le chat 
 Route::get('/chat', 'ChatsController@index');
+
 

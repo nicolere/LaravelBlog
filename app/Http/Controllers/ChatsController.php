@@ -18,7 +18,7 @@ class ChatsController extends Controller
     {
         return view('message/chat',array(
             'titre' => 'Page Tchat',
-            'subheader' => 'Viens chatter avec nous, on est bien'
+            'subheader' => 'viens chatter avec nous, on est bien'
         ));
     }
 

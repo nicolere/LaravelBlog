@@ -10,7 +10,7 @@ class ContactController extends Controller
     public function create() {
         return view('contact/contact',array(
             'titre' => 'Page Contact',
-            'subheader' => 'Formulaire de contact',
+            'subheader' => 'contacte nous !',
         ));
     }
 

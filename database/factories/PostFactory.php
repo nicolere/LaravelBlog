@@ -17,7 +17,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'post_author' => $faker->randomElement($users),
         'post_date' => now(),
         'post_content' => $faker->paragraph(),
-        'post_title' => $faker->sentence(),
+        'post_title' => $faker->sentence(5),
         'post_name' => $faker->word(),
         'post_status' => $faker->word(),
         'post_type' => 'article',

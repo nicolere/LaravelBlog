@@ -24,9 +24,9 @@ class User extends Authenticatable
      *
      * @var array
      */
-    // protected $hidden = [
-    //     'password', 'remember_token',
-    // ];
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
     /**
      * The attributes that should be cast to native types.
@@ -44,5 +44,15 @@ class User extends Authenticatable
    {
        return $this->hasMany('App\Post', 'post_author');
    }
+
+   /**
+    * A user can have many messages
+    *
+    * @return \Illuminate\Database\Eloquent\Relations\HasMany
+    */
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
 
 }

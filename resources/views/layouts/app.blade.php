@@ -26,6 +26,22 @@
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Pusher -->
+    <script src="https://js.pusher.com/4.4/pusher.min.js"></script>
+
+    <!-- Récupération des infos de l'utilisateur s'il est connecté -->
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken'=> csrf_token(),
+            'user'=> [
+                'authenticated' => auth()->check(),
+                'id' => auth()->check() ? auth()->user()->id : null,
+                'name' => auth()->check() ? auth()->user()->name : null, 
+                ]
+            ])
+        !!};
+</script>
 </head>
 <body>
     <div id="app">

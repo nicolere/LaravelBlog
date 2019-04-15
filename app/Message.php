@@ -12,10 +12,14 @@ class Message extends Model
     *
     * @var array
     */
-
     protected $fillable = ['body'];
 
     protected $appends = ['selfMessage'];
+
+    public function getSelfMessageAttribute() {
+        return $this->user_id === auth()->user()->id;
+    }
+
     
     /**
     * A message belong to a user

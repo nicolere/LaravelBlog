@@ -16,8 +16,11 @@ class CreateMessagesTable extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->text('message');
+            $table->text('body');
             $table->timestamps();
+
+            //Suppression des messages de l'utilisateur x en cas de suppression (clé étrangère)
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

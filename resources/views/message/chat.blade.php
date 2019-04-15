@@ -4,7 +4,8 @@
 
 <div class="container" id="app">
     <div class="row justify-content-center">
-        A venir
+        <chat-component></chat-component>
+        <user-component></user-component>
     </div>
 </div>
 @endsection

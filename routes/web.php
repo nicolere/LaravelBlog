@@ -33,4 +33,7 @@ Route::post('/contact', 'ContactController@store');
 //Route pour le chat 
 Route::get('/chat', 'ChatsController@index');
 
+//Route des messages du chat
+Route::get('/message', 'MessageController@index');
+
 

@@ -41,7 +41,8 @@
                 ]
             ])
         !!};
-</script>
+    </script>
+
 </head>
 <body>
     <div id="app">
@@ -100,8 +101,24 @@
             @yield('contentP')
         </main>
     </div>
+    <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
 </body>
+<script>
+        var botmanWidget = {
+            chatServer : '/botman',
+            title : 'BlogBot Widget',
+            introMessage : 'Bienvenue {{ Auth::user()->name }} 🙂',
+            displayMessageTime: true,
+            mainColor : '#F28240',
+            bubbleBackground: '#F28240',
+            bubbleAvatarUrl : '../../images/logo.png',
+            aboutText : 'Powered By Gau Nicolas',
+            aboutLink : 'https://github.com/nicolere',
+        };
+    </script>
+
+    <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
 </html>

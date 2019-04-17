@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "botman-tinker": "0.0.1",
         "laravel-echo": "^1.5.3",
         "pusher-js": "^4.4.0"
     }

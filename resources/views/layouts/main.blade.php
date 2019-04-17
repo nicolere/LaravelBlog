@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<!-- <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script> -->
+
 @section('contentP')
 <div class="top-bar">
     <div class="top-bar-left">
@@ -10,7 +10,6 @@
             <li><a href="/articles">Articles</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/chat">Web Chat</a></li>
-            <li><a href="/bonus">Bonus (Chatbot)</a></li>
         </ul>
     </div>
 </div>

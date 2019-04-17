@@ -33,8 +33,8 @@ Route::post('/contact', 'ContactController@store');
 //Route pour le chat 
 Route::get('/chat', 'ChatsController@index')->name('chat');
 
-//Route Bonus
-Route::get('/bonus', 'BonusController@index');
+//Route Bonus BotMan
+Route::match(['get', 'post'], '/botman', 'BotManController@bot');
 
 //Route des messages du chat
 Route::get('/message', 'MessageController@index')->name('message');

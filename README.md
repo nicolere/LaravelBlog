@@ -6,8 +6,31 @@ Blog d'articles réalisé avec le framework PHP [*"Laravel"*](https://laravel.co
 
 ## Guide d'installation
 
-**A faire**
+**A développer**
 
+### Base Projet
+1. Cloner ce répertoire
+2. `php artisan migrate`
+3. `php artisan migrate:fresh --seed`
+4. `php artisan serve`
+
+
+### Chat Pusher/Vue.js
+1. `npm install`
+2. `composer require pusher/pusher-php-server`
+3. `npm install pusher-js laravel-echo`
+
+
+### BotMan
+#### Requis Techniques
+* PHP >= 7.1.3
+
+1. `composer require botman/botman`
+2. `composer require botman/driver-web`
+
+## Guide d'utilisation
+
+**A faire**
 
 ### Commande de BlogBot
 

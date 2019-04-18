@@ -106,11 +106,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
 </body>
-<script>
+<!-- BotMan Widget -->
+<script> 
         var botmanWidget = {
             chatServer : '/botman',
             title : 'BlogBot Widget',
-            introMessage : 'Bienvenue {{ Auth::user()->name }} 🙂',
+            introMessage : "Bienvenue 🙂 ! Je suis BlogBot, un enfant du Framework PHP de Chatbot BotMan, je suis là pour vous aider.",
             displayMessageTime: true,
             mainColor : '#F28240',
             bubbleBackground: '#F28240',

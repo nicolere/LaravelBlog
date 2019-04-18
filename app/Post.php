@@ -17,4 +17,10 @@ class Post extends Model
        return $this->belongsTo('App\User','post_author');
    }
 
+   //Un post peut contenir des commentaires
+   public function comments()
+   {
+       return $this->hasMany('App\Comment');
+   }
+
 }

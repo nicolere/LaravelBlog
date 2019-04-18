@@ -11,10 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', 'HomeController@index');
 
 Route::get('/articles', 'ArticleController@index');
@@ -26,5 +22,10 @@ Route::get('/contact', 'ContactController@create');
 
 //Route pour la soumission du formulaire
 Route::post('/contact', 'ContactController@store');
+
+
+
+
+
 
 

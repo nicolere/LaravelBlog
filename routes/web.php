@@ -23,6 +23,15 @@ Route::get('/contact', 'ContactController@create');
 //Route pour la soumission du formulaire
 Route::post('/contact', 'ContactController@store');
 
+//Route pour la soumission d'un comentaire
+/*Route::post('/articles/{post_name}', function($post_name, Request $request){
+    \App\Http\Controllers\CommentController::store($request, $post_name);
+
+    return redirect('articles/'.$post_name);
+  });*/
+
+Route::post('/articles/{post_name}', 'CommentController@store');
+
 
 
 

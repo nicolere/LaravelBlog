@@ -11,17 +11,34 @@
         <div class="callout">
             <h4>  Commentaires </h4>
         <div>
+
         @foreach($post->comments as $comment)
-        <div class="card text-center border-dark mb-3 mx-auto" style="width: 100ù; border-radius: 1em">
-            <h5 class="card-title text-info ">{{ $comment->id }}</h5>
-            <div class="card-body">
-			<p>{{ $comment->comment_content }}</p>
+            <div class="card text-center border-dark mb-3 mx-auto" style="width: 100ù; border-radius: 1em">
+                <h5 class="card-title text-info ">{{ $comment->id }}</h5>
+                <div class="card-body">
+                <p>{{ $comment->comment_content }}</p>
+                </div>
+                <div class="card-footer text-muted">
+                Post by : {{ $comment->comment_author }} 
+                </div>
             </div>
-            <div class="card-footer text-muted">
-            Post by : {{ $comment->comment_author }} 
-            </div>
-        </div>
         @endforeach
+
+        <form class="col-md" method="POST">
+            @csrf
+            <legend>Commentez l'article</legend>
+            <div>
+                <label>Entrer votre pseudo</label>
+                <input type="text" class="form-control {{ $errors->has('author') ? 'is-invalid' : '' }}" name="author" id="author" placeholder="Votre pseudo">
+            </div>
+            <div>
+                <label>Entrer votre commentaire</label>
+                <textarea type="textarea" class="form-control {{ $errors->has('author') ? 'is-invalid' : '' }}" name="content" id="content" placeholder="Votre commentaire"></textarea>
+            </div>
+
+            <button class="btn btn-sucess" type="submit">Envoyer</button>
+        </form>
+
         </div>
     </div>
 

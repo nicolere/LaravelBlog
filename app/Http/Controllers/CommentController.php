@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
-{
+{   
 
     /**
      * Display a listing of the resource.
@@ -28,16 +28,26 @@ class CommentController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * Store a newly created comments.
      */
-    public function store(Request $request, $post_id)
+    public static function store(Request $request, $post_id)
 
     {
-        
+        $request->validate([
+            'author' => 'bail|required|max:25',
+            'content' => 'required',
+        ]);
 
+        //$post = Post::find($post_id);
+        $post = \App\Post::find(3);
+
+        $comment = new \App\Comment();
+        $comment->comment_author = $request->author;
+        $comment->comment_content = $request->content;
+        $comment->post()->associate($post);
+        $comment->save();
+
+        return redirect('articles/'.$post_name);
     }
 
     /**

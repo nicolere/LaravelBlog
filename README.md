@@ -9,7 +9,10 @@ Blog d'articles réalisé avec le framework PHP [*"Laravel"*](https://laravel.co
 
 ## Fonctionnalités implémentées
 
-* Add 1 ...
+* Add Comments system :
+    * MVC System
+    * Seeding comments
+    * Gestion des erreurs de formulaires
 * Add 2 ...
 
 ## Remarques

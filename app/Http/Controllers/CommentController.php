@@ -30,16 +30,16 @@ class CommentController extends Controller
     /**
      * Store a newly created comments.
      */
-    public static function store(Request $request, $post_id)
+    public static function store(Request $request, $post_name)
 
     {
+
         $request->validate([
             'author' => 'bail|required|max:25',
             'content' => 'required',
         ]);
 
-        //$post = Post::find($post_id);
-        $post = \App\Post::find(3);
+        $post = \App\Post::where('post_name', $post_name)->first();
 
         $comment = new \App\Comment();
         $comment->comment_author = $request->author;

@@ -44,6 +44,7 @@ class CommentController extends Controller
         $comment = new \App\Comment();
         $comment->comment_author = $request->author;
         $comment->comment_content = $request->content;
+        $comment->comment_date = now();
         $comment->post()->associate($post);
         $comment->save();
 

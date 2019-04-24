@@ -36,5 +36,14 @@ Route::post('/articles/{post_name}', 'CommentController@store');
 
 
 
+//Route pour le chat 
+Route::get('/chat', 'ChatsController@index')->name('chat');
+
+//Route Bonus BotMan
+Route::match(['get', 'post'], '/botman', 'BotManController@bot');
+
+//Route des messages du chat
+Route::get('/message', 'MessageController@index')->name('message');
+Route::post('/message', 'MessageController@store')->name('message.store');
 
 

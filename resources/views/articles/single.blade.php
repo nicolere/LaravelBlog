@@ -3,6 +3,7 @@
 @section('content')
 
     <div class="blog-post">
+<<<<<<< HEAD
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -42,6 +43,22 @@
             familiaris habere rationem omniaque perpeti ipsa cognitione et scientia captos et cum maximis 
             curis et laboribus compensare eam quam ex discendo capiant voluptatem ?<p>
 
+=======
+        <h3>{{ $post->post_title }} <small> {{ $post->post_date }} </small></h3>
+        <img class="thumbnail" src="/images/img_card.jpg">
+        <p> {{ $post->post_content }} </p>
+        <div class="callout">
+            <p> Author : {{ $nameauthor }}</p><a href="#">  Commentaire </a>
+        </div>
+    </div>
+    <!-- <div class="card text-center border-dark mb-3 mx-auto" style="width: 18rem; border-radius: 1em">
+        <img class="card-img-top" src="/images/img_card.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title text-info ">{{ $post->post_title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ $post->post_name }}</h6>
+            <p class="card-text">{{ $post->post_content }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+>>>>>>> cc6ef184bca7ae3caf4d4a0e0d0868ae2625417c
         </div>
 
         <div class="callout">
@@ -76,6 +93,10 @@
         </form>
 
         </div>
+<<<<<<< HEAD
     </div>
 
+=======
+    </div> -->
+>>>>>>> cc6ef184bca7ae3caf4d4a0e0d0868ae2625417c
 @endsection

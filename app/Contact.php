@@ -20,7 +20,4 @@ class Contact extends Model
         'contact_name', 'contact_email', 'contact_message', 'contact_date'
     ];
 
-    //Test pour git 
-    //Branche dev à travailler
-
 }

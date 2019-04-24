@@ -27,8 +27,8 @@ class ContactController extends Controller
         $contacts = \App\Contact::all();
         return view('contact/confirmation',array(
             'titre' => 'Page Confirmation',
-            'subheader' => 'Confirmation d"envoi',
-            'message' => 'Merci. Votre message a été transmis. Vous recevrez une réponse soon.',
+            'subheader' => "ta confirmation d'envoi.",
+            'message' => 'Merci ! Votre message a été transmis. Vous recevrez bientôt une réponse.',
             'contacts' => $contacts
         ));
 

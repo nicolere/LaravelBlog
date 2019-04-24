@@ -27,7 +27,7 @@ class HomeController extends Controller
         return view('welcome',array(
             'posts' => $posts,
             'titre' => 'Blog',
-            'subheader' => 'bienvenue sur notre Blog Laravel'
+            'subheader' => 'bienvenue sur notre Blog Laravel.'
         ));
     }
 }

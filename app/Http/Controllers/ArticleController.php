@@ -12,7 +12,7 @@ class ArticleController extends Controller
         return view('articles',array(
             'titre' => 'Page Articles',
             'postsArticles' => $postsArticles,
-            'subheader' => 'voici la page article'
+            'subheader' => 'voici la page avec tous nos articles.'
         ));
     }
 
@@ -24,7 +24,7 @@ class ArticleController extends Controller
             'post' => $post,
             'titre' => 'Article '.$post_name,
             'nameauthor' => $nameauthor,
-            'subheader' => 'ton article demandé'
+            'subheader' => 'ton article demandé et ses commentaires.'
         ));
 
      }

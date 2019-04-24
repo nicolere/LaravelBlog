@@ -27,7 +27,7 @@
 
                 <blockquote class="blockquote">
                     <p class="mb-0">{{ $post->post_content }} </p>
-                    <cite title="Source Title">Génération de content avec seed.</cite>
+                    <cite title="Source Title">Génération de contenu avec seed</cite>
                     </footer>
                 </blockquote>
             </div>
@@ -64,14 +64,14 @@
             @csrf
             <legend>Commentez l'article</legend>
             <div>
-                <label>Entrer votre pseudo</label>
+                <label>Entrez votre pseudo :</label>
                 <input type="text" class="form-control {{ $errors->has('author') ? 'is-invalid' : '' }}" name="author" id="author" placeholder="Votre pseudo">
             </div>
             <div>
-                <label>Entrer votre commentaire</label>
+                <label>Entrez votre commentaire :</label>
                 <textarea type="textarea" class="form-control {{ $errors->has('author') ? 'is-invalid' : '' }}" name="content" id="content" placeholder="Votre commentaire"></textarea>
             </div>
-
+            <br>
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
 

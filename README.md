@@ -1,9 +1,8 @@
 # BlogLaravel
 
 ## Résumé
-Blog d'articles réalisé avec le framework PHP [*"Laravel"*](https://laravel.com/) dans le cadre d'une UE Web Serveur.
+Blog d'articles réalisé avec le framework PHP [*"Laravel"*](https://laravel.com/) dans le cadre d'une UE Web Serveur.  
 Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonctionnalités selon notre choix.
-
 
 ## Guide d'installation
 
@@ -31,8 +30,8 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 
 ## Guide d'utilisation
 
-Sur ce projet, il vous sera demandé de créer un compte au minimum. Vous pourrez utiliser une fausse adresse email mais utilisez un nom correct, pour une bonne expérience. Enjoy !
-Tout les boutons présents sur nos pages sont fonctionnels.
+Sur ce projet, il vous sera demandé de créer un compte au minimum. Vous pourrez utiliser une fausse adresse email mais utilisez un nom correct, pour une bonne expérience. Enjoy !  
+Tous les boutons présents sur nos pages sont fonctionnels.
 
 * Utilisation générale -> Fonctionnelle :
     * Page Principale (Home)
@@ -42,27 +41,27 @@ Tout les boutons présents sur nos pages sont fonctionnels.
     * BotMan Widget
 
 * Utilisation Page Home :
-    1. Affiche les derniers articles
-    2. Cliquer sur un lien d'article -> redirection vers page détail Article
-    3. Lire l'article et les commentaires
-    4. Ajouter un commentaire avec le formulaire
-    5. Envoyer et vérifier l'ajout (présence du commentaire)
+  1. Affiche les derniers articles
+  2. Cliquer sur un lien d'article -> redirection vers page détail Article
+  3. Lire l'article et les commentaires
+  4. Ajouter un commentaire avec le formulaire
+  5. Envoyer et vérifier l'ajout (présence du commentaire)
 * Utilisation Page Articles :
-    1. Affiche tous les articles présents
+  1. Affiche tous les articles présents
 * Utilisation Page Contact :
-    1. Affiche un formulaire de contact
-    2. Remplir les infos demandées
-    3. Envoyer -> redirection vers page de confirmation d'envoi
+  1. Affiche un formulaire de contact
+  2. Remplir les infos demandées
+  3. Envoyer -> redirection vers page de confirmation d'envoi
 * Utilisation Page Web Chat :
-    1. Ouvrir 2 fenêtres (1 normale, 1 privée)
-    2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
-    3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
-    4. Vérifier la présence des 2 personnes (Espace Users)
-    5. Commencer à discuter + envoi en temps réel
+  1. Ouvrir 2 fenêtres (1 normale, 1 privée)
+  2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
+  3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
+  4. Vérifier la présence des 2 personnes (Espace Users)
+  5. Commencer à discuter + envoi en temps réel
 * Utilisation du BotMan Widget :
-    1. Cliquer sur l'afficheur en bas à droite
-    2. Entrer une des commandes ci-dessous
-    3. Suivre les indications/directives
+  1. Cliquer sur l'afficheur en bas à droite
+  2. Entrer une des commandes ci-dessous
+  3. Suivre les indications/directives
 
 ### Commande de BlogBot
 

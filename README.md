@@ -41,27 +41,27 @@ Enjoy !
     * BlogBot Widget
 
 1. Utilisation Page Home :
-  1. Affiche les derniers articles
-  2. Cliquer sur un lien d'article -> redirection vers page détail Article
-  3. Lire l'article et les commentaires
-  4. Ajouter un commentaire avec le formulaire
-  5. Envoyer et vérifier l'ajout (présence du commentaire)
+    1. Affiche les derniers articles
+    2. Cliquer sur un lien d'article -> redirection vers page détail Article
+    3. Lire l'article et les commentaires
+    4. Ajouter un commentaire avec le formulaire
+    5. Envoyer et vérifier l'ajout (présence du commentaire)
 2. Utilisation Page Articles :
-  1. Affiche tous les articles présents
+    1. Affiche tous les articles présents
 3. Utilisation Page Contact :
-  1. Affiche un formulaire de contact
-  2. Remplir les infos demandées
-  3. Envoyer -> redirection vers page de confirmation d'envoi
+    1. Affiche un formulaire de contact
+    2. Remplir les infos demandées
+    3. Envoyer -> redirection vers page de confirmation d'envoi
 4. Utilisation Page Web Chat :
-  1. Ouvrir 2 fenêtres (1 normale, 1 privée)
-  2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
-  3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
-  4. Vérifier la présence des 2 personnes (Espace Users)
-  5. Commencer à discuter + envoi en temps réel
+    1. Ouvrir 2 fenêtres (1 normale, 1 privée)
+    2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
+    3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
+    4. Vérifier la présence des 2 personnes (Espace Users)
+    5. Commencer à discuter + envoi en temps réel
 5. Utilisation du BotMan Widget :
-  1. Cliquer sur l'afficheur en bas à droite
-  2. Entrer une des commandes ci-dessous
-  3. Suivre les indications/directives
+    1. Cliquer sur l'afficheur en bas à droite
+    2. Entrer une des commandes ci-dessous
+    3. Suivre les indications/directives
 
 ### Commande de BlogBot
 

@@ -43,9 +43,17 @@ help | Demande de l'aide au Bot
 
 ## Fonctionnalités implémentées
 
+<<<<<<< HEAD
+* Add Comments system :
+    * MVC System
+    * Seeding comments
+    * Gestion des erreurs de formulaires
+* Add 2 ...
+=======
 * [x] WebChat avec Pusher et Vue.js (Nicolas)
 * [x] Bot Widget avec Framework PHP de ChatBot "BotMan" (Nicolas)
 * Ajout de Commentaires (Robin)
+>>>>>>> cc6ef184bca7ae3caf4d4a0e0d0868ae2625417c
 
 ## Remarques
 

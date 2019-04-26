@@ -8,26 +8,16 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 
 ### Base Projet
 1. Cloner ce répertoire
-2. Modifier dans le fichier `.env` la ligne `DB_DATABASE`  
-```
-DB_DATABASE= "YourAbsolutePath\database\database.sqlite"
-```
+2. `composer update`
 3. `php artisan config:clear` et `php artisan cache:clear`
 4. `php artisan migrate --seed`
 5. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
 6. `php artisan serve`
-
-### Chat Pusher/Vue.js
-1. `npm install`
-2. `composer require pusher/pusher-php-server`
-3. `npm install pusher-js laravel-echo`
+7. `http://127.0.0.1:8000`
 
 ### BotMan
 #### Requis Techniques
 * PHP >= 7.1.3
-
-1. `composer require botman/botman`
-2. `composer require botman/driver-web`
 
 ## Guide d'utilisation
 

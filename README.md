@@ -6,20 +6,21 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 
 ## Guide d'installation
 
-**A développer**
-
 ### Base Projet
 1. Cloner ce répertoire
-2. `php artisan migrate`
-3. `php artisan migrate:fresh --seed`
-4. `php artisan serve`
-
+2. Modifier dans le fichier `.env` la ligne `DB_DATABASE`  
+```
+DB_DATABASE= "YourAbsolutePath\database\database.sqlite"
+```
+3. `php artisan config:clear` et `php artisan cache:clear`
+4. `php artisan migrate --seed`
+5. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
+6. `php artisan serve`
 
 ### Chat Pusher/Vue.js
 1. `npm install`
 2. `composer require pusher/pusher-php-server`
 3. `npm install pusher-js laravel-echo`
-
 
 ### BotMan
 #### Requis Techniques
@@ -30,7 +31,7 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 
 ## Guide d'utilisation
 
-Sur ce projet, il vous sera demandé de créer un compte au minimum. Vous pourrez utiliser une fausse adresse email mais utilisez un nom correct, pour une bonne expérience. Tous les boutons présents sur nos pages sont fonctionnels.  
+Sur ce projet, il vous sera demandé de créer, au minimum, un compte. Vous pourrez utiliser une fausse adresse email mais utilisez un nom correct, pour une bonne expérience. Tous les boutons présents sur nos pages sont fonctionnels.  
 Enjoy !
 
 * Utilisation générale -> Fonctionnelle :
@@ -40,28 +41,32 @@ Enjoy !
     * Page Web Chat
     * BlogBot Widget
 
-1. Utilisation Page Home :
-    1. Affiche les derniers articles
-    2. Cliquer sur un lien d'article -> redirection vers page détail Article
-    3. Lire l'article et les commentaires
-    4. Ajouter un commentaire avec le formulaire
-    5. Envoyer et vérifier l'ajout (présence du commentaire)
-2. Utilisation Page Articles :
-    1. Affiche tous les articles présents
-3. Utilisation Page Contact :
-    1. Affiche un formulaire de contact
-    2. Remplir les infos demandées
-    3. Envoyer -> redirection vers page de confirmation d'envoi
-4. Utilisation Page Web Chat :
-    1. Ouvrir 2 fenêtres (1 normale, 1 privée)
-    2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
-    3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
-    4. Vérifier la présence des 2 personnes (Espace Users)
-    5. Commencer à discuter + envoi en temps réel
-5. Utilisation du BotMan Widget :
-    1. Cliquer sur l'afficheur en bas à droite
-    2. Entrer une des commandes ci-dessous
-    3. Suivre les indications/directives
+#### Utilisation Page Home :
+1. Affiche les derniers articles
+2. Cliquer sur un lien d'article -> redirection vers page détail Article
+3. Lire l'article et les commentaires
+4. Ajouter un commentaire avec le formulaire
+5. Envoyer et vérifier l'ajout (présence du commentaire)
+
+#### Utilisation Page Articles :
+1. Affiche tous les articles présents
+
+#### Utilisation Page Contact :
+1. Affiche un formulaire de contact
+2. Remplir les infos demandées
+3. Envoyer -> redirection vers page de confirmation d'envoi
+
+#### Utilisation Page Web Chat :
+1. Ouvrir 2 fenêtres (1 normale, 1 privée)
+2. S'enregistrer sur ces 2 fenêtres -> 2 comptes différents
+3. Ouvrir la page Web Chat sur chaque et disposer les fenêtres côte à côte
+4. Vérifier la présence des 2 personnes (Espace Users)
+5. Commencer à discuter + envoi en temps réel
+
+#### Utilisation du BotMan Widget :
+1. Cliquer sur l'afficheur en bas à droite
+2. Entrer une des commandes ci-dessous
+3. Suivre les indications/directives
 
 ### Commande de BlogBot
 

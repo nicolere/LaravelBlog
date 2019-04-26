@@ -9,11 +9,12 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 ### Base Projet
 1. Cloner ce répertoire
 2. `composer update`
-3. `php artisan config:clear` et `php artisan cache:clear`
-4. `php artisan migrate --seed`
-5. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
-6. `php artisan serve`
-7. `http://127.0.0.1:8000`
+3. `sudo apt-get install php-curl`
+4. `php artisan config:clear` et `php artisan cache:clear`
+5. `php artisan migrate --seed`
+6. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
+7. `php artisan serve`
+8. `http://127.0.0.1:8000`
 
 ### BotMan
 #### Requis Techniques

@@ -70,10 +70,10 @@ help | Demande de l'aide au Bot
 
 ## Fonctionnalités implémentées
 
-* [x] Add Comments system :
-    * MVC System
-    * Seeding comments
-    * Gestion des erreurs de formulaires
+* [x] Ajout d'un système de commentaire :
+    * Respect de l'architecture MVC
+    * Commentaires aléatoires générés par "seeding"
+    * Possibilité d'ajouter un commentaire via formulaire
 * [x] WebChat avec Pusher et Vue.js
 * [x] Bot Widget avec Framework PHP de ChatBot "BotMan"
 
@@ -92,3 +92,6 @@ curl.cainfo = "pathWamp\bin\php\php7.1.9\extras\ssl\cacert.pem"
 * (Nicolas) Développement Bonus d'un bot avec le Framework PHP [*"Botman"*](https://botman.io/), utilisation du driver web (possibilité d'utiliser le driver Facebook, Telegram, Slack ...). Le bot n'est pas très développé, il s'agit d'un test pour voir l'étendue des possibles (livré avec ses commandes).
 * (Nicolas) Pour la fonctionnalité d'aide par le Bot, le rendu final est lien. Le résultat final voulu serait une redirection automatique par le Bot vers cedit lien.
 * (Nicolas) Pour la conversation avec le Bot, le rendu final est un résumé des données envoyé durant la discussion. Le résultat final voulu serait un lien avec la BDD et la création/modification/suppression d'un utilisateur, servant d'un autre moyen pour s'enregistrer par exemple.
+
+* (Robin) Développement d'un système de commentaires simple et fonctionnel. 
+* (Robin) Le système de commentaires m'a demandé une bonne compréhension de l'architecure MVC (nouvelle pour moi) il m'a fallut de nombreux essais/erreurs pour avoir un système fonctionnel.

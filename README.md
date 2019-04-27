@@ -7,9 +7,18 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
 ## Guide d'installation
 
 ### Base Projet
-1. Cloner ce répertoire
+1. Cloner ce répertoire `git clone url`
 2. `composer update`
-3. `sudo apt-get install php-curl`
+3. Linux : `sudo apt-get install php-curl`
+3. Windows : Download le fichier [*"cacert.pem"*](https://curl.haxx.se/docs/caextract.html)
+    1. Déplacer ce fichier dans votre répertoire PHP :  
+    Si Wamp -> `pathWamp\bin\php\phpVersion\extras\ssl\cacert.pem`  
+    Sinon -> `php\phpVersion\extras\ssl\cacert.pem`
+    2. Modifier et Décommenter la ligne du fichier *php.ini* avec ce path:  
+    ```
+    [curl]
+    curl.cainfo = "yourPath" 
+    ```
 4. `php artisan config:clear` et `php artisan cache:clear`
 5. `php artisan migrate --seed`
 6. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
@@ -80,14 +89,9 @@ help | Demande de l'aide au Bot
 ## Remarques
 
 * (Nicolas) Pour l'implémentation du Chat Web, je me suis précipité sur le développement de la fonctionnalité du coup j'ai codé sans vraiment comprendre le processus (implémentation, affichage, connexion avec Pusher, etc..). D'où le fait que ma branche sur Github est très désordonnée/flou. Après une période de réflexion et apprentissage, le codage a été plus rapide est plus compréhensif.
-* (Nicolas) A la fin du développement de cette fonctionnalité, la connexion avec Pusher n'était pas fonctionnelle, j'ai dû ajouter le fichier "cacert.pem" dans mon dossier php.
+* (Nicolas) A la fin du développement de cette fonctionnalité, la connexion avec le serveur Pusher n'était pas fonctionnelle, j'ai dû ajouter le fichier "cacert.pem" dans mon dossier php.
 
-> Ajout de ce fichier au dossier php de notre version de developpement (ici php 7.1.9 pour moi) + modification du fichier php.ini avec cette commande
-
-```
-[curl]
-curl.cainfo = "pathWamp\bin\php\php7.1.9\extras\ssl\cacert.pem" 
-```
+> Ajout de ce fichier au dossier php de notre version de developpement (ici php 7.1.9 pour moi) + modification du fichier php.ini comme demandé plus haut (installation)
 
 * (Nicolas) Développement Bonus d'un bot avec le Framework PHP [*"Botman"*](https://botman.io/), utilisation du driver web (possibilité d'utiliser le driver Facebook, Telegram, Slack ...). Le bot n'est pas très développé, il s'agit d'un test pour voir l'étendue des possibles (livré avec ses commandes).
 * (Nicolas) Pour la fonctionnalité d'aide par le Bot, le rendu final est lien. Le résultat final voulu serait une redirection automatique par le Bot vers cedit lien.

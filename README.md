@@ -19,6 +19,8 @@ Site simpliste pour permettre la découverte du framework. Avec l'ajout de fonct
     [curl]
     curl.cainfo = "yourPath" 
     ```
+    3. Décommenter la ligne du fichier *php.ini* :  
+    `extension=php_curl.dll`
 4. `php artisan config:clear` et `php artisan cache:clear`
 5. `php artisan migrate --seed`
 6. Si problème avec le seeding : `composer dump-autoload` et `php artisan migrate:fresh --seed`
@@ -96,6 +98,6 @@ help | Demande de l'aide au Bot
 * (Nicolas) Développement Bonus d'un bot avec le Framework PHP [*"Botman"*](https://botman.io/), utilisation du driver web (possibilité d'utiliser le driver Facebook, Telegram, Slack ...). Le bot n'est pas très développé, il s'agit d'un test pour voir l'étendue des possibles (livré avec ses commandes).
 * (Nicolas) Pour la fonctionnalité d'aide par le Bot, le rendu final est lien. Le résultat final voulu serait une redirection automatique par le Bot vers cedit lien.
 * (Nicolas) Pour la conversation avec le Bot, le rendu final est un résumé des données envoyé durant la discussion. Le résultat final voulu serait un lien avec la BDD et la création/modification/suppression d'un utilisateur, servant d'un autre moyen pour s'enregistrer par exemple.
-
+* (Nicolas) Lors de l'installation des dependencies (composer update), affichage d'une erreur non bloquante "Ambigous class x".
 * (Robin) Développement d'un système de commentaires simple et fonctionnel. 
 * (Robin) Le système de commentaires m'a demandé une bonne compréhension de l'architecure MVC (nouvelle pour moi) il m'a fallut de nombreux essais/erreurs pour avoir un système fonctionnel.
